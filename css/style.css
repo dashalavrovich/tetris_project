@@ -1,0 +1,164 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: pink;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game {
+  border-radius: 5%;
+  background-color: pink;
+  width: 320px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.9),
+    inset 0 0px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.9), inset 0 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.game__controlblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 50px 20px 50px 20px;
+}
+
+.game__keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.game__keys_options {
+  margin-top: 20px;
+}
+
+.game__keys_control {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.game__keys_control-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.game__key {
+  border-radius: 50%;
+  background-color: cyan;
+  border: 1px solid black;
+  outline: none;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.game__key:active {
+  -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.game__key-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.game__key_option {
+  height: 50px;
+  width: 50px;
+}
+
+.game__key_control {
+  height: 40px;
+  width: 40px;
+}
+
+.game #root {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.game #root h1 {
+  font-size: 30px;
+}
+
+h1 span:nth-child(1) {
+  color: red;
+}
+
+h1 span:nth-child(2) {
+  color: orange;
+}
+
+h1 span:nth-child(3) {
+  color: yellow;
+}
+
+h1 span:nth-child(4) {
+  color: green;
+}
+
+h1 span:nth-child(5) {
+  color: blue;
+}
+
+h1 span:nth-child(6) {
+  color: purple;
+}
+
+.game #root canvas {
+  display: block;
+  margin: 0;
+  background-color: rgb(202, 202, 202);
+  -webkit-box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.7);
+}
