@@ -14,7 +14,7 @@ export default class Controller {
     this.view.renderStartScreen();
   }
 
-  // для обновления игры раз в секунду
+  // обновление игры
   update() {
     this.model.movePieceDown();
     this.updateView();
